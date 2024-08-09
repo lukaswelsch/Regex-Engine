@@ -10,3 +10,4 @@ Several Steps are needed to convert a Regex into executable code.
 5. Convert the DFA to executable code.
 
 In this repository all these steps are implemented and a learning project to see how all these algorithms work together to create executable code from a regex.
+
