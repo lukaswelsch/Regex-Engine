@@ -48,3 +48,5 @@ src/grammar/*.rs
 src/grammar/*.interp
 src/grammar/*.tokens
 src/grammar/.antlr
+
+*.idea
