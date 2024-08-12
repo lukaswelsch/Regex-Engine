@@ -7,8 +7,8 @@ expr        : term ( '|' term )* #union;        // Union
 term        : factor+            #concat ;      // Concatenation
 factor      : primary kleene?        ;      // Kleene star
 kleene      : '*';
-primary     : '(' expr ')'       #paranthesis   // Parenthesized expressions
-            | CHAR               #terminal      // Single character literals
+primary     : '(' expr ')'      #parenthesis
+            | CHAR              #char
             ;
 
 // Lexer rules

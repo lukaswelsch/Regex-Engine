@@ -60,7 +60,7 @@ fn main(){
     let source = CommonTokenStream::new(lexer);
     let mut parser = RegexParser::new(source);
 
-    let parse_tree_root = parser.root().expect("test");
+    let parse_tree_root = parser.expr().expect("test");
     //assert!(parse_tree_root.is_ok());
 
     // // Accept states: 2

@@ -26,7 +26,7 @@ impl NFA {
         for symbol in input.chars() {
             let mut next_states: HashSet<u32> = HashSet::new();
             for &state in &current_states {
-                if let Some(transitions) = self.transitions.get(&(state, symbol)) {
+                if let Some(transitions) = self.transitions.get(&(state, Option::from(symbol))) {
                     next_states.extend(transitions);
                 }
             }
